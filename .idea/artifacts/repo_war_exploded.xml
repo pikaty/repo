@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="repo:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/repo_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="repo/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="repo" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="aopalliance" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
