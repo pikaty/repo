@@ -11,16 +11,13 @@
     <title></title>
   </head>
   <body>
-	
-
-
-  	<form action="/WEB-INF/views/hello.jsp" method="post" >
+		<form action="reg.jsp" method="post" >
   	    <table>
   	        <tr>
-  	            <td>Username:</td><td><input name="j_username"/></td>
+  	            <td>Username:</td><td><input name="username"/></td>
   	        </tr>
   	        <tr>
-  	            <td>Password:</td><td><input type="password" name="j_password"/></td>
+  	            <td>Password:</td><td><input type="password" name="password"/></td>
   	        </tr>
   	        <tr>
   	            <td></td><td><input type="submit" value="Submit"/></td>
