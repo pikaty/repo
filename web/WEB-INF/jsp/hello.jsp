@@ -1,13 +1,15 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
-    <title></title>
+	<title>Spring 3.0 MVC Series: Hello World - ViralPatel.net</title>
 </head>
 <body>
-
-<p>
+	${message}
+        
+   <p>
     Hello ${username}. You have password: ${password}
-</p>
+   </p>
+
 
 </body>
 </html>

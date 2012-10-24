@@ -10,10 +10,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class CRegistration {
 
 
-    @RequestMapping(value = "/*reg*" , method = RequestMethod.POST)
+    @RequestMapping(value = "login" , method = RequestMethod.POST)
     public String reg(@RequestParam String username, @RequestParam String password, Model model){
         model.addAttribute("username" , username);
         model.addAttribute("password" , password);
+        System.out.println("CRegistration");
         return "hello";
     }
 }
