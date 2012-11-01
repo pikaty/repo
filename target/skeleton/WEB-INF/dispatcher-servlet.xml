@@ -10,9 +10,9 @@
        http://www.springframework.org/schema/mvc
        http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
 
-  <!--  <mvc:resources mapping="*.css"
-                   location="css/" />
-                   -->
+   <!-- <mvc:resources mapping="/resources/**"
+                   location="/resources/" />
+       -->
     <context:component-scan
             base-package="controllers" />
 
