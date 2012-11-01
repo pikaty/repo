@@ -12,11 +12,7 @@
   	            <input type="submit" value="Submit"/>
   	    </table>
   	</form>
-      
-      
     <a href="hello">Say Hello</a>
-
-
   </body>
 
 

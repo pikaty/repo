@@ -1,4 +1,3 @@
-
 <html>
 <head>
 	<title>Spring 3.0 MVC</title>
@@ -7,7 +6,7 @@
     <link rel="stylesheet" type="text/css" hret="style.css"/>
 </head>
 <body>
-
+                     fsdsdfdsfsdf
 
 </body>
 </html>
