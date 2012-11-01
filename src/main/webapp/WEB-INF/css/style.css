@@ -2,12 +2,11 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
     background-color:#FFFFFF;
 }
 
 body
 {   font: normal 80% Arial, Helvetica, sans-serif;
-    background: #ccc;
+    background-color: #ccc;
     color: #000;
 }
