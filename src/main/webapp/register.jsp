@@ -6,7 +6,7 @@
     <title></title>
   </head>
   <body>
-		<form action="login" method="post" >
+		<form action="login.html" method="post" >
   	          Username<input name="username"/>
   	            Password:<input type="password" name="password"/>
   	            <input type="submit" value="Submit"/>

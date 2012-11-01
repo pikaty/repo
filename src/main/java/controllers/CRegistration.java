@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class CRegistration {
-    @RequestMapping(value = "login" , method = RequestMethod.POST)
+    @RequestMapping(value = "login.html" , method = RequestMethod.POST)
     public ModelAndView reg(@RequestParam String username, @RequestParam String password, Model model){
         model.addAttribute("username" , username);
         model.addAttribute("password", password);
