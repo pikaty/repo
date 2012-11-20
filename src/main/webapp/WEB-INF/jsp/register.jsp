@@ -6,7 +6,7 @@
   </head>
   <body>
 
-		<form action="login.html" method="post" >
+		<form action="login.req" method="post" >
 
   	          Username<input name="username"/>
   	            Password:<input type="password" name="password"/>

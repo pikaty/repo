@@ -6,8 +6,6 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css"/>
 </head>
 <body>
-              ghdhdhfdghgfhfghfhddhghdfhhfdhdfhdhfdhfhfhhh
-<p>HOME  adasdsd asda as d<p/>
 
 </body>
 </html>
