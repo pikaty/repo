@@ -11,6 +11,9 @@ body {
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 13px;
     line-height: 1.5em;
+    overflow: hidden;
+    height: 100%;
+    max-height: 100%;
     background-color: #e0e0e0;
     background-repeat: repeat-x;
     background-position: top;
@@ -18,10 +21,67 @@ body {
 }
 
 
-.name p {
-    font-size: 20px;
-    margin: 2;
-    padding: 2;
+#name p {
+    font-size: 45px;
+    margin: 20px;
+    padding: 20px;
+    background-color: transparent;
     text-align: center;
+    text-shadow: 0 0 5px #ff00A0, 0 0 10px #ff004D, 0 0 15px #ff0041, 0 0 20px #ff002A, 0 0 25px #ff002B, 0 0 30px #ff0000, 0 0 35px #F70000;
+}
 
+#entry a {
+    color: #ffffff;
+    float: right;
+    margin-right: 25;
+    text-decoration-line: none;
+}
+
+#framecontentLeft, #framecontentRight{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px; /*Width of left frame div*/
+    height: 100%;
+    overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+    color: white;
+}
+
+#framecontentRight{
+    left: auto;
+    right: 0;
+    width: 150px; /*Width of right frame div*/
+    overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+    color: white;
+}
+
+#framecontentTop, #framecontentBottom{
+    position: absolute;
+    top: 0;
+    left: 200px; /*Set left value to WidthOfLeftFrameDiv*/
+    right: 150px; /*Set right value to WidthOfRightFrameDiv*/
+    width: auto;
+    height: 120px; /*Height of top frame div*/
+    overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+    color: white;
+}
+
+#framecontentBottom{
+    top: auto;
+    height: 70px; /*Height of bottom frame div*/
+    bottom: 0;
+    background: #000000 url(/resources/jpg/footer.png) top repeat-x
+}
+
+#maincontent{
+    position: fixed;
+    top: 120px; /*Set top value to HeightOfTopFrameDiv*/
+    bottom: 70px; /*Set bottom value to HeightOfBottomFrameDiv*/
+    left: 200px; /*Set left value to WidthOfLeftFrameDiv*/
+    right: 150px; /*Set right value to WidthOfRightFrameDiv*/
+    overflow: auto;
+}
+
+.innertube{
+    margin: 15px; /*Margins for inner DIV inside each DIV (to provide padding)*/
 }

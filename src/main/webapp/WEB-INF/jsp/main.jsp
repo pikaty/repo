@@ -15,25 +15,66 @@
 </head>
 <body>
 
-<div id="content">
-    <ul id="nav">
-        <li> <a class="home" href="#">Home</a></li>
-        <li> <a class="services" href="#">Services</a>
-            <ul>
-                <li><a href="#">Game Counter Strike</a></li>
-            </ul>
-        </li>
-        <li> <a class="portfolio" href="#">Portfolio</a> </li>
-        <li> <a class="about" href="#">About</a>     </li>
-        <li> <a class="contract" href="#">Contract</a>  </li>
-    </ul>
 
+<div id="framecontentLeft">
+    <div class="innertube">
 
-    <div id="name">
-        <p>puZZle</p>
+        <h3>Sample text here</h3>
+
     </div>
-
 </div>
+
+<div id="framecontentRight">
+    <div class="innertube">
+
+        <h3>Sample text here</h3>
+
+    </div>
+</div>
+
+<div id="framecontentTop">
+    <div class="innertube">
+
+        <div id="content">
+            <ul id="nav">
+                <li> <a class="home" href="#">Home</a></li>
+                <li> <a class="services" href="#">Services</a>
+                    <ul>
+                        <li><a href="#">Game Counter Strike</a></li>
+                    </ul>
+                </li>
+                <li> <a class="portfolio" href="#">Portfolio</a> </li>
+                <li> <a class="about" href="#">About</a>     </li>
+                <li> <a class="contract" href="#">Contract</a>  </li>
+            </ul>
+
+            <div id="entry"><a href="#">Вход</a></div>
+
+            <div id="name">
+                <p>World Of PuzzLe</p>
+            </div>
+
+         </div>
+
+    </div>
+</div>
+
+<div id="framecontentBottom">
+    <div class="innertube">
+
+
+    </div>
+</div>
+
+
+<div id="maincontent">
+    <div class="innertube">
+
+        <h1>Dynamic Drive CSS Library</h1>
+
+    </div>
+</div>
+
 
 
 <sptg:form>
