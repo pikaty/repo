@@ -16,8 +16,4 @@ public class CRegistration {
         model.addAttribute("password", password);
         return new ModelAndView("main");
     }
-    @RequestMapping(value = "/")
-    public ModelAndView reg2(Model model){
-        return new ModelAndView("register");
-    }
 }

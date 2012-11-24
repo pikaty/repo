@@ -26,6 +26,7 @@
       <version>3.0.5.RELEASE</version>
       <type>jar</type>
     </dependency>
+
     		<!-- Servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -59,7 +60,6 @@
           <artifactId>hibernate-core</artifactId>
           <version>4.1.8.Final</version>
       </dependency>
-
   </dependencies>
   
   

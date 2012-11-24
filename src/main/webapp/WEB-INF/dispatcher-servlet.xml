@@ -10,14 +10,19 @@
        http://www.springframework.org/schema/mvc
        http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.0.xsd">
 
-    <!-- <mvc:resources mapping="*.jpg"
-                   location="/jpg/" />
-     -->
-    <context:component-scan
-            base-package="controllers"  />
+    <mvc:annotation-driven/>
+
+    <mvc:resources mapping="/resources/jpg/**" location="/resources/jpg/" />
+    <mvc:resources mapping="/resources/css/**" location="/resources/css/" />
+    <mvc:resources mapping="/resources/scripts/**" location="/resources/scripts/" />
+
+    <context:component-scan base-package="controllers"  />
+
+    <mvc:view-controller path="/" view-name="main"/>
+
 
     <bean id="viewResolver"
-          class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+          class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass"
                   value="org.springframework.web.servlet.view.JstlView" />
         <property name="prefix" value="/WEB-INF/jsp/" />
@@ -30,20 +35,11 @@
         <property name="username" value="sa"/>
         <property name="password" value=""/>
     </bean>
-    -->
-    <!-- To add exception translation to a template-less Hibernate DAO -->
-    <!--
+
     <bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
 
     <bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
-        <property name="dataSource" ref="dataSource"/>  -->
-        <!-- LocalSessionFactoryBean <property name="mappingResources">
-            <list>
-                <value>../webapp/WEB-INF/hsqdlb.hbm.xml</value>
-            </list>
-        </property>
-        -->
-      <!--
+        <property name="dataSource" ref="dataSource"/>
         <property name="packagesToScan">
             <list>
                 <value>dao</value>
@@ -58,5 +54,6 @@
 
     <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
         <property name="sessionFactory" ref="sessionFactory"/>
-    </bean>  -->
+    </bean>
+    -->
 </beans>
