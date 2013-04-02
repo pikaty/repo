@@ -9,25 +9,54 @@
   <url>http://maven.apache.org</url>
   <dependencies>
      <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-      <version>3.0.5.RELEASE</version>
-      <type>jar</type>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>3.2.2.RELEASE</version>
+        <type>jar</type>
     </dependency>
     <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-web</artifactId>
-      <version>3.0.5.RELEASE</version>
-      <type>jar</type>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-web</artifactId>
+        <version>3.2.2.RELEASE</version>
+        <type>jar</type>
+    </dependency>
+   <dependency>
+        <groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-jpa</artifactId>
+        <version>1.3.0.RELEASE</version>
+        <type>jar</type>
     </dependency>
     <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-webmvc</artifactId>
-      <version>3.0.5.RELEASE</version>
-      <type>jar</type>
+        <groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-commons</artifactId>
+        <version>1.5.0.RELEASE</version>
+        <type>jar</type>
+    </dependency>
+   <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-aop</artifactId>
+        <version>3.2.2.RELEASE</version>
+        <type>jar</type>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-jdbc</artifactId>
+        <version>3.2.2.RELEASE</version>
+        <type>jar</type>
+      </dependency>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>3.2.2.RELEASE</version>
+        <type>jar</type>
     </dependency>
 
-    		<!-- Servlet -->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-orm</artifactId>
+        <version>3.2.2.RELEASE</version>
+    </dependency>
+
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
@@ -45,11 +74,7 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-orm</artifactId>
-            <version>3.1.3.RELEASE</version>
-        </dependency>
+
         <dependency>
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
@@ -60,9 +85,146 @@
           <artifactId>hibernate-core</artifactId>
           <version>4.1.8.Final</version>
       </dependency>
+      <dependency>
+          <groupId>org.hibernate.javax.persistence</groupId>
+          <artifactId>hibernate-jpa-2.1-api</artifactId>
+          <version>1.0.0.Draft-14</version>
+          <type>jar</type>
+      </dependency>
+      <dependency>
+          <groupId>org.javassist</groupId>
+          <artifactId>javassist</artifactId>
+          <version>3.17.1-GA</version>
+          <type>jar</type>
+      </dependency>
+      <dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <version>5.1.21</version>
+      </dependency>
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+          <version>1.7.5</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-simple</artifactId>
+        <version>1.7.5</version>
+      </dependency>
+      <dependency>
+          <groupId>joda-time</groupId>
+          <artifactId>joda-time</artifactId>
+          <version>2.2</version>
+          <type>jar</type>
+      </dependency>
+      <dependency>
+          <groupId>joda-time</groupId>
+          <artifactId>joda-time-jsptags</artifactId>
+          <version>1.1.1</version>
+          <type>jar</type>
+
+      </dependency>
+
+      <dependency>
+          <groupId>joda-time</groupId>
+          <artifactId>joda-time-hibernate</artifactId>
+          <version>1.3</version>
+          <type>jar</type>
+          <scope>compile</scope>
+          <exclusions>
+              <exclusion>
+                  <artifactId>hibernate</artifactId>
+                  <groupId>hibernate</groupId>
+              </exclusion>
+              <exclusion>
+                  <groupId>joda-time</groupId>
+                  <artifactId>joda-time</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>commons-logging</groupId>
+                  <artifactId>commons-logging-api</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>commons-collections</groupId>
+                  <artifactId>commons-collections</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>hsqldb</groupId>
+                  <artifactId>hsqldb</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>ehcache</groupId>
+                  <artifactId>ehcache</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>dom4j</groupId>
+                  <artifactId>dom4j</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>cglib</groupId>
+                  <artifactId>cglib-full</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>antlr</groupId>
+                  <artifactId>antlr</artifactId>
+              </exclusion>
+          </exclusions>
+      </dependency>
+      <dependency>
+          <groupId>com.h2database</groupId>
+          <artifactId>h2</artifactId>
+          <version>1.3.171</version>
+      </dependency>
+
+      <!-- Hibernate-->
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>4.2.0.Final</version>
+        <type>jar</type>
+    </dependency>
+
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-entitymanager</artifactId>
+        <version>4.2.0.Final</version>
+        <type>jar</type>
+    </dependency>
+
+      <!-- The end of Hibernate-->
+
+      <dependency>
+          <groupId>com.google.guava</groupId>
+          <artifactId>guava</artifactId>
+          <version>14.0.1</version>
+          <type>jar</type>
+      </dependency>
+      <dependency>
+          <groupId>org.jadira.usertype</groupId>
+          <artifactId>usertype.core</artifactId>
+          <version>3.0.0.CR1</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.apache.tiles</groupId>
+          <artifactId>tiles-core</artifactId>
+          <version>3.0.1</version>
+          <type>jar</type>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.tiles</groupId>
+          <artifactId>tiles-jsp</artifactId>
+          <version>3.0.1</version>
+          <type>jar</type>
+      </dependency>
+
+      <dependency>
+          <groupId>org.apache.tiles</groupId>
+          <artifactId>tiles-extras</artifactId>
+          <version>3.0.1</version>
+      </dependency>
   </dependencies>
-  
-  
   <build>
     <finalName>skeleton</finalName>
   </build>
