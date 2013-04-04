@@ -15,7 +15,6 @@
 
     <annotation-driven/>
     <default-servlet-handler/>
-
     <resources location="/" mapping="/resources/**"/>
 
     <mvc:resources mapping="/resources/jpg/**" location="/styles/custom-theme/" />
@@ -27,10 +26,10 @@
     <beans:bean id="tilesViewResolver"
           class="org.springframework.web.servlet.view.UrlBasedViewResolver">
         <beans:property name="viewClass"
-                  value="org.springframework.web.servlet.view.tiles2.TilesView" />
+                  value="org.springframework.web.servlet.view.tiles3.TilesView" />
     </beans:bean>
 
-    <beans:bean class="org.springframework.web.servlet.view.tiles2.TilesConfigurer" id="tilesConfigurer">
+    <beans:bean class="org.springframework.web.servlet.view.tiles3.TilesConfigurer" id="tilesConfigurer">
         <beans:property name="definitions">
             <beans:list>
                 <beans:value>/WEB-INF/layouts/layouts.xml</beans:value>
