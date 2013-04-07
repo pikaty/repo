@@ -13,7 +13,7 @@
        http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.0.xsd"
             >
 
-    <annotation-driven/>
+    <annotation-driven validator="validator"/>
     <default-servlet-handler/>
     <resources location="/" mapping="/resources/**"/>
 
@@ -22,6 +22,10 @@
     <mvc:resources mapping="/resources/scripts/**" location="/scripts/" />
 
     <context:component-scan base-package="controllers"/>
+
+    <beans:bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
+        <beans:property name="validationMessageSource" ref="messageSource"/>
+    </beans:bean>
 
     <beans:bean id="tilesViewResolver"
           class="org.springframework.web.servlet.view.UrlBasedViewResolver">

@@ -205,7 +205,6 @@
           <artifactId>usertype.core</artifactId>
           <version>3.0.0.CR1</version>
       </dependency>
-
       <dependency>
           <groupId>org.apache.tiles</groupId>
           <artifactId>tiles-core</artifactId>
@@ -223,6 +222,21 @@
           <groupId>org.apache.tiles</groupId>
           <artifactId>tiles-extras</artifactId>
           <version>3.0.1</version>
+      </dependency>
+      <dependency>
+          <groupId>javax.validation</groupId>
+          <artifactId>validation-api</artifactId>
+          <version>1.1.0.CR3</version>
+      </dependency>
+      <dependency>
+          <artifactId>hibernate-validator</artifactId>
+          <groupId>org.hibernate</groupId>
+          <version>4.3.1.Final</version>
+      </dependency>
+      <dependency>
+          <groupId>org.codehaus.jackson</groupId>
+          <artifactId>jackson-mapper-lgpl</artifactId>
+          <version>1.9.12</version>
       </dependency>
   </dependencies>
   <build>
